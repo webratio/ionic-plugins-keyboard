@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    id="com.ionic.keyboard"
-    version="1.0.3">
+    id="com.webratio.phonegap.plugins.ionic.keyboard"
+    version="1.0.3.1">
     <name>Keyboard</name>
     <description>Ionic Keyboard Plugin</description>
     <license>Apache 2.0</license>
-    <keywords>Ionic,keyboard</keywords>
-    <repo>https://github.com/driftyco/ionic-plugins-keyboard.git</repo>
-    <issue>https://github.com/driftyco/ionic-plugins-keyboard/issues</issue>
+    <keywords>Ionic,keyboard,webratio</keywords>
+    <repo>https://github.com/webratio/ionic-plugins-keyboard.git</repo>
 
   <js-module src="www/keyboard.js" name="keyboard">
     <clobbers target="cordova.plugins.Keyboard" />
