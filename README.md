@@ -3,12 +3,12 @@ Keyboard
 
 The `cordova.plugins.Keyboard` object provides functions to make interacting with the keyboard easier, and fires events to indicate that the keyboard will hide/show.
 
-    cordova plugin add com.ionic.keyboard
+    cordova plugin add ionic-plugin-keyboard
 
 Methods
 -------
 
-- cordova.plugins.Keyboard.hideKeyboardAccessoryBar
+- ~~cordova.plugins.Keyboard.hideKeyboardAccessoryBar~~ (**removed in 2.0, see below**)
 - cordova.plugins.Keyboard.close
 - cordova.plugins.Keyboard.disableScroll
 - cordova.plugins.Keyboard.show
@@ -27,18 +27,13 @@ These events are fired on the window.
   * A number `keyboardHeight` is given on the event object, which is the pixel height of the keyboard.
 - native.keyboardhide
 
-Permissions
------------
 
-#### config.xml
+# API reference
 
-            <feature name="Keyboard">
-                <param name="ios-package" value="IonicKeyboard" onload="true" />
-            </feature>
-
-
-Keyboard.hideKeyboardAccessoryBar
+~~Keyboard.hideKeyboardAccessoryBar~~
 =================
+
+**NOTE: This method started causing apps to be rejected from the App Store, so has been removed until a workaround is found.**
 
 Hide the keyboard accessory bar with the next, previous and done buttons.
 
@@ -61,7 +56,7 @@ Close the keyboard if it is open.
 Supported Platforms
 -------------------
 
-- iOS, Android
+- iOS, Android, Blackberry 10, Windows
 
 
 Keyboard.disableScroll
@@ -75,18 +70,18 @@ Disable native scrolling, useful if you are using JavaScript to scroll
 Supported Platforms
 -------------------
 
-- iOS
+- iOS, Windows
 
 Keyboard.show
 =================
 
-Force keyboard to be shown on Android. This typically helps if autofocus on a text element does not pop up the keyboard automatically
+Force keyboard to be shown. This typically helps if autofocus on a text element does not pop up the keyboard automatically
 
     cordova.plugins.Keyboard.show();
 
 Supported Platforms
 
-- Android
+- Android, Blackberry 10, Windows
 
 native.keyboardshow
 =================
@@ -108,7 +103,7 @@ keyboardHeight: the height of the keyboard in pixels
 Supported Platforms
 -------------------
 
-- iOS, Android
+- iOS, Android, Blackberry 10, Windows
 
 
 native.keyboardhide
@@ -130,4 +125,4 @@ None
 Supported Platforms
 -------------------
 
-- iOS, Android
+- iOS, Android, Blackberry 10, Windows
